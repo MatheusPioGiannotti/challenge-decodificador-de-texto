@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de Texto</title>
+        <link rel="shortcut icon" href="./assets/decodificadordetexto.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="./assets/decodificadordetexto.png" alt="Ícone Decodificador De Texto">
+        </header>
+        <main>
+            <div class="codificardecodificar">
+                <textarea id="areatexto" maxlength="465" wrap="hard" spellcheck="false" placeholder="Digite seu texto..." class="codificardecodificar__areatexto"></textarea>
+                <p id="notificacao" class="codificardecodificar__notificacao"><img src="./assets/notificacao.png" alt="Ícone De Notificação.">São permitidas apenas letras minúsculas, não utilize acentos ou simbolos. O limite de caracteres disponível é de '465'.</p>
+                <div class="codificardecodificar__botoes">
+                    <button id="codificar" class="codificardecodificar__botoes__codificar" >Codificar</button>
+                    <button id="decodificar" class="codificardecodificar__botoes__decodificar" >Decodificar</button>
+                    <button id="apagar" class="codificardecodificar__botoes__apagar"></button> 
+                </div>
+            </div>
+            <div class="resultado">
+                <textarea id="arearesultado" wrap="hard" readonly placeholder="O texto codificado ou decodificado aparecerá aqui!" class="resultado__arearesultado"></textarea>
+                <button id="copiar" class="resultado__copiar">Copiar</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy 2024 Matheus Pio Giannotti -</p>
+            <a href="https://br.linkedin.com/" target="_blank" class="github"><img src="./assets/linkedin.png" alt="Ícone LinkedIn.">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" class="linkedin"><img src="./assets/github.png" alt="Ícone GitHub.">GitHub</a>
+            <p>- Challenge Decodificador de Texto - Desenvolvido para Alura - Programa ONE (Oracle Next Education) - Turma 7</p>
+        </footer>
+        <script type="text/javascript" src="./scripts/script.js"></script>
+    </body>
+</html>

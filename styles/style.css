@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --darkwhite: #F1F8E8;
+    --cyan: #04BFBF;
+    --darkcyan: #004358;
+    --yellow: #BEDB39;
+    --quicksand: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: var(--darkwhite);
+}
+
+header {
+    padding: 0.5% 2%;
+}
+
+main {
+    padding: 0 7.5%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.codificardecodificar {
+    padding: 2% 12%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.codificardecodificar__areatexto {
+    resize: none;
+    outline: none;
+    border: 1px solid var(--darkcyan);
+    border-radius: 5%;
+    border-style: dashed;
+    background-color: var(--darkwhite);
+    width: 34vw;
+    height: 50vh;
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: medium;
+    font-weight:lighter;
+    color: var(--cyan);
+}
+
+.codificardecodificar__areatexto::placeholder {
+    color: var(--cyan);
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.codificardecodificar__notificacao {
+    color: var(--darkcyan);
+    font-family: var(--quicksand);
+    font-size: small;
+    font-weight: 900;
+    display: inline-flex;
+    align-items: center;
+    width: 94%;
+}
+
+.codificardecodificar__botoes {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 1vh;
+    padding: 0 7.5vw;
+    gap: 1vw;
+}
+
+.codificardecodificar__botoes__codificar {
+    border: 1px solid var(--darkcyan);
+    border-radius: 25px;
+    background-color: var(--darkcyan);
+    color: var(--yellow);
+    height: 35px;
+    width: 135px;
+    font-family: var(--quicksand);
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.codificardecodificar__botoes__decodificar {
+    border: 1px solid var(--cyan);
+    border-radius: 25px;
+    background-color: var(--cyan);
+    color: var(--darkcyan);
+    height: 35px;
+    width: 135px;
+    font-family: var(--quicksand);
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.codificardecodificar__botoes__apagar {
+    border: none;
+    background-image: url(/assets/apagar.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    cursor: pointer;
+}
+
+.resultado {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 20vw;
+}
+
+.resultado__arearesultado {
+    resize: none;
+    outline: none;
+    border: 0.5px solid var(--cyan);
+    border-radius: 5%;
+    background-color: var(--white);
+    width: 24vw;
+    height:80vh;
+    padding: 1.5px 15px;
+    font-family: "Quicksand", sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    color: var(--darkcyan);
+}
+
+.resultado__arearesultado::placeholder {
+    padding: 12%;
+    font-size: large;
+    font-weight: lighter;
+    color: var(--darkcyan);
+    text-align: center;
+    height: 65vh;
+    background-image: url(/assets/planodefundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.resultado__copiar {
+    border: 1px solid var(--yellow);
+    border-radius: 25px;
+    background-color: var(--yellow);
+    color: var(--darkcyan);
+    height: 35px;
+    width: 135px;
+    font-family: var(--quicksand);
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    bottom: 7.5vh;
+}
+
+footer {
+    padding: 0 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    font-family: var(--quicksand);
+    font-size: smaller;
+    font-weight: bold;
+    color: var(--darkcyan);
+}
+
+.linkedin, .github {
+    text-decoration: none;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--quicksand);
+    color: var(--cyan);
+}
+
+@media (max-width: 950px) {
+    
+    header {
+        padding: 1% 45%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5%;
+    }
+
+    .codificardecodificar__notificacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .codificardecodificar__botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .codificardecodificar__botoes__apagar {
+        height: 65px;
+    }
+
+    .resultado {
+        width: 28vw;
+    }
+
+    .resultado__arearesultado::placeholder {
+        height: 70vh;
+    }
+
+    footer {
+        padding: 0 32%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+    }
+}
