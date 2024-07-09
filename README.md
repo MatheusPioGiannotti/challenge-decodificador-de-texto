@@ -42,8 +42,10 @@ Projeto desenvolvido para o Curso Praticando lógica de programação: Challenge
 
 # Projeto e Programas utilizados
 As linguagens utilizadas no desenvolvimento do projeto foram: HTML, CSS e JavaScript.<br>
-O Programa utilizado no desenvolvimento do projeto foi o Visual Studio Code. Você pode baixa-ló nesse link: (https://code.visualstudio.com/).<br>
-Você pode ter acesso ao projeto atraves desse link: (https://github.com/MatheusPioGiannotti/challenge-decodificador-de-texto).
+O Programa utilizado no desenvolvimento do projeto foi o Visual Studio Code. Você pode baixa-ló nesse link:<br>
+(https://code.visualstudio.com/).<br>
+Você pode ter acesso ao projeto atraves desse link:<br>
+(https://github.com/MatheusPioGiannotti/challenge-decodificador-de-texto).
 
 # Desenvolvedor
 Matheus Pio Giannotti<br>
